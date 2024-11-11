@@ -27,5 +27,5 @@ fun main() {
         inputLine = input.readLine()
         println(inputLine)
     }
-    output.println("Y ella me dice goodbye")
+    output.println("Adeu")
 }
