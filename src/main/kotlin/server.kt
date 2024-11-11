@@ -5,6 +5,7 @@ import java.io.InputStream
 import java.io.InputStreamReader
 import java.io.PrintWriter
 import java.net.ServerSocket
+import kotlin.concurrent.thread
 
 fun main() {
     val port = 5858
@@ -23,7 +24,8 @@ fun main() {
 
     var inputLine: String = input.readLine()
     while (inputLine == null) {
-
+        inputLine = input.readLine()
+        println(inputLine)
     }
-    output.println("Adeu")
+    output.println("Y ella me dice goodbye")
 }
