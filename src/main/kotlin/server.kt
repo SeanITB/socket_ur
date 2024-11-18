@@ -19,13 +19,12 @@ fun main() {
     val input = BufferedReader(InputStreamReader(clientSocket.getInputStream()))
 
     // Contestar
+
+
+    val inputLine: String = input.readLine()
+
+    println("This is my actual pose :$inputLine")
     val output = PrintWriter(clientSocket.getOutputStream(), true)
+    output.println(inputLine)
 
-
-    var inputLine: String = input.readLine()
-    while (inputLine == null) {
-        inputLine = input.readLine()
-        println(inputLine)
-    }
-    output.println("Adeu")
 }
