@@ -16,7 +16,7 @@ fun main() {
     val output = PrintWriter(clientSocket.getOutputStream(), true)
 
     // Llegir el que diu el robot
-    val input = BufferedReader(InputStreamReader(clientSocket.getInputStream()))
+    val input = BufferedReader(InputStreamReader(clientSocket.getInputStream(),"utf8"))
     val actualPose: String = input.readLine()
     println("This is my actual pose :$actualPose")
 
@@ -26,11 +26,4 @@ fun main() {
 
     //Tancar el server
     serverSocket.close()
-}
-
-
-
-fun stringToMutableList(inputLine: String): MutableList<Double> {
-    val subInput = inputLine.subSequence(2, inputLine.length -1 )
-    return subInput.split(",").map{ it.toDouble() }.toMutableList()
 }
