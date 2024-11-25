@@ -22,7 +22,10 @@ fun main() {
 
 
     // actual pose to final pose
-    output.println("(0.222887,0.141989,0.24792,1.23286,-1.20128,-1.22264)")
+    while(true){
+        output.println("(0.222887,0.141989,0.24792,1.23286,-1.20128,-1.22264)")
+
+    }
 
     //Tancar el server
     serverSocket.close()
