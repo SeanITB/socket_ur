@@ -6,7 +6,14 @@ import java.io.PrintWriter
 import java.net.ServerSocket
 
 fun main() {
-    val port = 5858
+    var juego = TresEnRalla()
+
+     juego.mostrarTablero()
+}
+
+
+
+/*val port = 5858
     // Obrir el servidor
     val serverSocket = ServerSocket(port)
     println("Attempting to start socket server...")
@@ -29,4 +36,4 @@ fun main() {
 
     //Tancar el server
     serverSocket.close()
-}
+    */
